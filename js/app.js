@@ -2,12 +2,12 @@ var myApp=angular.module('lol',['ui.router']);
 
 
 myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $urlRouterProvider) {
-	$urlRouterProvider.when("", "/jinx");
+	$urlRouterProvider.when("", "/ekko");
 		$stateProvider
-			.state("jinx", {
+			.state("jinx666", {
 				url: "/jinx",
 				templateUrl: 'template/jinx.html',
-				controller:"jinx"
+				controller:"jinx123"
 			})
 			.state("ekko", {
 				url: "/ekko",
