@@ -14,5 +14,19 @@ myApp.config(['$stateProvider', '$urlRouterProvider', function($stateProvider, $
 				templateUrl: 'template/ekko.html',
 				controller:"ekko"
 			})
-
+			.state("fizz", {
+				url: "/fizz",
+				templateUrl: 'template/fizz.html',
+				controller:"fizz"
+			})
+			.state("ezreal", {
+				url: "ezreal",
+				templateUrl: 'template/ezreal.html',
+				controller:"ezreal"
+			})
+			.state("lux", {
+				url: "/lux",
+				templateUrl: 'template/lux.html',
+				controller:"lux"
+			})
 }])

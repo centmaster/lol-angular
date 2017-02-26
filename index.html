@@ -1,4 +1,7 @@
 <!DOCTYPE html>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link href="css/basecss/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/logo.css">
 <html>
 <head>
 
@@ -6,18 +9,37 @@
 
 	<style>.active{color: red;font-weight: bold;}</style>
 </head>
-<body ng-app="lol">
+<body ng-app="lol" >
+<div>
+<div  id="logo">
+	<img src="img/logo.jpg" width="20%" height="50px" >
+</div>
+<div  id="nav-hero">
+	<ul class="nav nav-pills">
+	<li><a ui-sref="ekko" ui-sref-active="active">Ekko</a></li>
+	<li><a ui-sref="jinx666" ui-sref-active="active">jinx</a></li>
+	<li><a ui-sref="fizz" ui-sref-active="active">fizz</a></li>
+	<li><a ui-sref="ezreal" ui-sref-active="active">ezreal</a></li>
+	<li><a ui-sref="lux" ui-sref-active="active">lux</a></li>
+	</ul>
+</div>
+</div>
 
-<a ui-sref="ekko" ui-sref-active="active">Ekko</a>
-<a ui-sref="jinx666" ui-sref-active="active">jinx</a>
+
+<div>
+	<ui-view></ui-view>
+</div>
 
 
-<ui-view></ui-view>
+<script type="text/javascript" src="js/basejs/angular/jquery-3.0.0.min.js"></script>
 <script type="text/javascript" src="js/basejs/angular/bootstrap.js"></script>
 <script src="js/basejs/angular/angular.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/basejs/angular/angular-ui-router.js" type="text/javascript"></script>
 <script type="text/javascript" src="js/app.js"></script>
 <script type="text/javascript" src="js/controller/jinx.js"></script>
 <script type="text/javascript" src="js/controller/ekko.js"></script>
+<script type="text/javascript" src="js/controller/fizz.js"></script>
+<script type="text/javascript" src="js/controller/ezreal.js"></script>
+<script type="text/javascript" src="js/controller/lux.js"></script>
 </body>
 </html>
