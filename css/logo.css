@@ -1,11 +1,15 @@
+#view-show{
+	margin-top: 50px;
+}
+
 #logo img{
 	float: left;
 }
 #nav-hero{
-	margin-left: 20%;
+	padding-left: 30%;
 	line-height: 30px;
 	height: 50px;
-	background-color: #0F3106;
+	background-color: #0B0422;
 }
 
 #nav-champion{
@@ -15,12 +19,6 @@
 	justify-content: space-around;
 }
 
-
-.first-row{
-	height:60vh;
-	width: 100%;
-}
-
 ul li{
 	height: 100%;
 	width: 20%;
@@ -28,15 +26,53 @@ ul li{
 }
 
 ul li a{
+	text-decoration: none!important;
+	height: 100%;
 	display: flex;
 	justify-content: center;
+	align-items: center;
 	font-size: 18px;
-	font-style: Kingon;
+	color: #9EDD6F;
+	font-style: italic;
 	
 }
 
 ul li:hover{
-	border-top:1px solid;
-	border-top-color: yellow;
-	background-color: #090952；
+	background-color: #81CAF7;
+}
+
+
+#nav-right{
+	float: right;
+	margin-right: 10%;
+	font-size: 18px;
+	height: 100%;
+}
+
+.first-row{
+	height:60vh;
+	width: 100%;
+	background:url(../img/bg1.jpg);
+
+}
+
+.second-row{
+	height: 60vh;
+	width: 100%;
+	background:url(../img/bg2.jpg);
+	background-size: 100% 100%;
+}
+
+.third-row{
+	height: 60vh;
+	width: 100%;
+	background:url(../img/bg3.jpg);
+	background-size: 100% 100%;
+}
+
+#nav-whole{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
 }
